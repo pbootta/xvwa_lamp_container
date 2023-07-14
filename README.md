@@ -1,4 +1,4 @@
-tuxotron xvwa docker image
+pbootta xvwa docker image
 =================
 
 This is an image to run xvwa in a docker container.
@@ -10,7 +10,7 @@ Running the image
 
 Start your image binding the external port 80:
 
-	sudo docker run --name xvwa -d -p 80:80 tuxotron/xvwa
+	sudo docker run --name xvwa -d -p 80:80 pbootta/xvwa
 
 Open your browser and go to:
 
