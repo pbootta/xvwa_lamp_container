@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER tuxotron <tuxotron@gmail.com>
+MAINTAINER pbootta <pbootta@fortinet.com>
 
 # Install packages
 ENV DEBIAN_FRONTEND noninteractive
@@ -28,7 +28,7 @@ ADD apache_default /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 
 RUN rm -fr /var/www/html
-RUN git clone https://github.com/s4n7h0/xvwa /var/www/html/xvwa
+RUN git clone https://github.com/pbootta/xvwa.git /var/www/html/xvwa
 
 #Enviornment variables to configure php
 ENV PHP_UPLOAD_MAX_FILESIZE 10M
